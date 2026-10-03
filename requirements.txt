@@ -1,0 +1,10 @@
+pandas
+numpy
+requests
+matplotlib
+seaborn
+scikit-learn
+xgboost
+joblib
+streamlit
+jupyter
