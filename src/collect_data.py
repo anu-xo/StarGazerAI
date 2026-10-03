@@ -1,3 +1,5 @@
+from dotenv import load_dotenv
+load_dotenv()  
 """
 StarSight / StarGazer AI - Day 1: collect GitHub repositories.
 
