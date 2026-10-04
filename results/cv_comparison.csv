@@ -1,0 +1,4 @@
+Model,CV Mean Acc,CV Std
+XGBoost,0.9121,0.0092
+Logistic Regression,0.911,0.0072
+Random Forest,0.9104,0.0077
