@@ -1,0 +1,4 @@
+Model,Accuracy,Precision (macro),Recall (macro),Macro F1
+XGBoost,0.9258,0.9268,0.9258,0.9262
+Random Forest,0.9217,0.9225,0.9217,0.922
+Logistic Regression,0.9217,0.9218,0.9217,0.9216
