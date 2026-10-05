@@ -6,7 +6,7 @@ LABELS = ["Low", "Medium", "High"]
 
 @st.cache_resource
 def load_model():
-    return joblib.load("notebooks/models/best_model.joblib")
+    return joblib.load("models/best_model.joblib")
 
 model = load_model()
 languages = sorted(model.named_steps["prep"].named_transformers_["cat"].categories_[0])
