@@ -1,12 +1,16 @@
 import os, datetime as dt
+from pathlib import Path
+
 import joblib, pandas as pd, requests, streamlit as st
 
 st.set_page_config(page_title="StarSight", page_icon="⭐")
 LABELS = ["Low", "Medium", "High"]
 
+MODEL_PATH = Path(__file__).parent / "models" / "best_model.joblib"
+
 @st.cache_resource
 def load_model():
-    return joblib.load("models/best_model.joblib")
+    return joblib.load(MODEL_PATH)
 
 model = load_model()
 languages = sorted(model.named_steps["prep"].named_transformers_["cat"].categories_[0])
